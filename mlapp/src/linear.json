@@ -1,10 +1,10 @@
 {
-  "IncludeGlobPatterns":"linear.* | __init__.py | print/*",
+  "IncludeGlobPatterns":"linear.*|**/__init__.py|printer/**|",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
-  "name": "linear_model",
-  "label": "build a linear model",
+  "name": "linear_model-k2",
+  "label": "build a linear model-k2",
   "program": "linear.py",
   "componentClass": "Linear",
   "group": "Algorithms",

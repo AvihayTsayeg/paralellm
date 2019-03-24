@@ -1,10 +1,10 @@
 {
-  "IncludeGlobPatterns":"serving.* | __init__.py | print/*",
+  "IncludeGlobPatterns":"serving.*|**/__init__.py|printer/**|",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
-  "name": "serving",
-  "label": "serve model",
+  "name": "serving-k2",
+  "label": "serve model-k2",
   "program": "serving.py",
   "componentClass": "Serving",
   "group": "General",

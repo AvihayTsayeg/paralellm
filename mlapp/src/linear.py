@@ -2,7 +2,7 @@ from parallelm.components.connectable_component import ConnectableComponent
 from parallelm.mlops import mlops
 from parallelm.mlops.stats.multi_line_graph import MultiLineGraph
 
-from mlapp.src.printer.kprinter import print_data
+from printer.kprinter import print_data
 
 
 class Linear(ConnectableComponent):
@@ -11,7 +11,7 @@ class Linear(ConnectableComponent):
 
     def _materialize(self, parent_data_objs, user_data):
         for param in parent_data_objs:
-            prent_param = "parent param is: {param}".format(param=param)
+            prent_param = "linear -----------> parent param is: {param}".format(param=param)
             print_data(self._logger, prent_param)
 
         mlt = MultiLineGraph().name("Multi-line graph example").labels(["lable-1", "lable-2", "lable-3"])

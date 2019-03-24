@@ -1,10 +1,10 @@
 {
-  "IncludeGlobPatterns":"fetcher.* | __init__.py | print/*",
+  "IncludeGlobPatterns":"fetcher.*|**/__init__.py|",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
-  "name": "fetcher",
-  "label": "fetch and parse google report",
+  "name": "fetcher-k2",
+  "label": "fetch and parse google report-k2",
   "program": "fetcher.py",
   "componentClass": "Fetcher",
   "group": "ModelConnectors",

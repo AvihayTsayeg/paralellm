@@ -2,3 +2,4 @@
 /out
 /.idea
 **/*.tar
+**/__pycache__
