@@ -1,4 +1,5 @@
 {
+  "IncludeGlobPatterns":"serving.* | __init__.py | print/*",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",

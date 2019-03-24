@@ -2,6 +2,8 @@ from parallelm.components.connectable_component import ConnectableComponent
 from parallelm.mlops import mlops
 from parallelm.mlops.stats.table import Table
 
+from mlapp.src.printer.kprinter import print_data
+
 
 class Logistic(ConnectableComponent):
     def __init__(self, engine):
@@ -10,8 +12,7 @@ class Logistic(ConnectableComponent):
     def _materialize(self, parent_data_objs, user_data):
         for param in parent_data_objs:
             prent_param = "parent param is: {param}".format(param=param)
-            print(prent_param)
-            self._logger.info(prent_param)
+            print_data(self._logger, prent_param)
 
         tbl = Table().name("Table example").cols(["Worker", "Requests"])
         for index in range(0, 10):
