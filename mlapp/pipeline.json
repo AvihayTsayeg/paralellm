@@ -1,0 +1,60 @@
+{
+  "name": "Kenshoo Example",
+  "engineType": "Generic",
+  "pipe": [
+    {
+      "name": "google data fetcher",
+      "id": 1,
+      "type": "fetcher",
+      "parents": [],
+      "arguments": {
+        "clientId": 100
+      }
+    },
+    {
+      "name": "build the linear model",
+      "id": 2,
+      "type": "linear_model",
+      "parents": [
+        {
+          "parent": 1,
+          "output": 0
+        }
+      ],
+      "arguments": {
+      }
+    },
+    {
+      "name": "build the logistic model",
+      "id": 3,
+      "type": "logistic_model",
+      "parents": [
+        {
+          "parent": 1,
+          "output": 0
+        }
+      ],
+      "arguments": {
+      }
+    },
+    {
+      "name": "serves the model",
+      "id": 4,
+      "type": "serving",
+      "parents": [
+        {
+          "parent": 2,
+          "output": 0
+        },
+        {
+          "parent": 3,
+          "output": 0
+        }
+      ],
+      "arguments": {
+        "clientId": 100
+      }
+    }
+  ],
+  "systemConfig": {}
+}

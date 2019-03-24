@@ -1,0 +1,38 @@
+{
+  "engineType": "Generic",
+  "userStandalone": false,
+  "language": "Python",
+  "name": "serving",
+  "label": "serve model",
+  "program": "serving.py",
+  "componentClass": "Serving",
+  "group": "General",
+  "useMLOps": true,
+  "inputInfo": [
+    {
+      "description": "Linear Model",
+      "label": "model path",
+      "defaultComponent": "",
+      "type": "str",
+      "group": "data"
+    },
+    {
+      "description": "Logistic Model",
+      "label": "model path",
+      "defaultComponent": "",
+      "type": "str",
+      "group": "data"
+    }
+  ],
+  "outputInfo": [],
+  "arguments": [
+    {
+      "key": "clientId",
+      "label": "Kenshoo client Id",
+      "type": "int",
+      "description": "kenshoo client to optimize",
+      "optional": false
+    }
+  ],
+  "version": 1
+}
