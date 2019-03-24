@@ -1,0 +1,28 @@
+{
+  "engineType": "Generic",
+  "userStandalone": false,
+  "language": "Python",
+  "name": "logistic_model",
+  "label": "build a logistic model",
+  "program": "logistic.py",
+  "componentClass": "Logistic",
+  "group": "Algorithms",
+  "useMLOps": true,
+  "inputInfo": [{
+    "description": "Google report",
+    "label": "report path",
+    "defaultComponent": "",
+    "type": "str",
+    "group": "data"
+  }],
+  "outputInfo": [{
+    "description": "Model",
+    "label": "model path",
+    "defaultComponent": "",
+    "type": "str",
+    "group": "data"
+  }],
+  "arguments": [
+  ],
+  "version": 1
+}

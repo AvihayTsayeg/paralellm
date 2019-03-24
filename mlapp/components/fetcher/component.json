@@ -1,0 +1,29 @@
+{
+  "engineType": "Generic",
+  "userStandalone": false,
+  "language": "Python",
+  "name": "fetcher",
+  "label": "fetch and parse google report",
+  "program": "fetcher.py",
+  "componentClass": "Fetcher",
+  "group": "ModelConnectors",
+  "useMLOps": true,
+  "inputInfo": [],
+  "outputInfo": [{
+    "description": "Google report",
+    "label": "report path",
+    "defaultComponent": "",
+    "type": "str",
+    "group": "data"
+  }],
+  "arguments": [
+    {
+      "key": "clientId",
+      "label": "Kenshoo client Id",
+      "type": "int",
+      "description": "kenshoo client to optimize",
+      "optional": false
+    }
+  ],
+  "version": 1
+}

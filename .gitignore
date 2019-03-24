@@ -1,0 +1,5 @@
+/venv
+/out
+/.idea
+**/*.tar
+__pycache__
