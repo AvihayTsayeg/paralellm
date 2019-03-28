@@ -4,6 +4,10 @@ from parallelm.mlops.stats.bar_graph import BarGraph
 
 from printer.kprinter import print_data
 
+# noinspection PyUnresolvedReferences
+from ansible import cli
+# noinspection PyUnresolvedReferences
+import requests
 
 class Serving(ConnectableComponent):
     def __init__(self, engine):

@@ -3,7 +3,6 @@ import sys
 from parallelm.components.connectable_component import ConnectableComponent
 from parallelm.mlops import mlops
 
-from printer import kprinter
 from printer.kprinter import print_data
 
 
