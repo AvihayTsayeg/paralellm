@@ -1,3 +1,9 @@
+try:
+    from pip import main as pipmain
+except:
+    from pip._internal import main as pipmain
+pipmain(['install', 'ansible'])
+
 from parallelm.components.connectable_component import ConnectableComponent
 from parallelm.mlops import mlops
 from parallelm.mlops.stats.bar_graph import BarGraph
@@ -5,9 +11,15 @@ from parallelm.mlops.stats.bar_graph import BarGraph
 from printer.kprinter import print_data
 
 
+# noinspection PyUnresolvedReferences
+from ansible import cli
+# noinspection PyUnresolvedReferences
+import requests
+
 class Serving(ConnectableComponent):
     def __init__(self, engine):
         super(self.__class__, self).__init__(engine)
+        self._logger.info(__file__)
         print_data(self._logger, "***************Serving**********************")
 
     def _materialize(self, parent_data_objs, user_data):

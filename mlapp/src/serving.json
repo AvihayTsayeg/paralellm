@@ -1,6 +1,7 @@
 {
   "IncludeGlobPatterns":"serving.*|**/__init__.py|printer/**|",
   "engineType": "Generic",
+  "deps": ["ansible","requests"],
   "userStandalone": false,
   "language": "Python",
   "name": "serving-k2",
