@@ -3,52 +3,57 @@
   "engineType": "Generic",
   "pipe": [
     {
-      "name": "google data fetcher",
+      "name": "fetcher-k3",
       "id": 1,
-      "type": "fetcher",
+      "type": "fetcher-k3",
       "parents": [],
       "arguments": {
         "clientId": 100
       }
     },
     {
-      "name": "build the linear model",
+      "name": "linear_model-k3",
       "id": 2,
-      "type": "linear_model",
+      "type": "linear_model-k3",
       "parents": [
         {
           "parent": 1,
-          "output": 0
+          "output": 0,
+          "input": 0
+
         }
       ],
       "arguments": {
       }
     },
     {
-      "name": "build the logistic model",
+      "name": "logistic_model-k3",
       "id": 3,
-      "type": "logistic_model",
+      "type": "logistic_model-k3",
       "parents": [
         {
           "parent": 1,
-          "output": 0
+          "output": 0,
+          "input": 0
         }
       ],
       "arguments": {
       }
     },
     {
-      "name": "serves the model",
+      "name": "serving-k3",
       "id": 4,
-      "type": "serving",
+      "type": "serving-k3",
       "parents": [
         {
           "parent": 2,
-          "output": 0
+          "output": 0,
+           "input": 0
         },
         {
           "parent": 3,
-          "output": 0
+          "output": 0,
+           "input": 1
         }
       ],
       "arguments": {
