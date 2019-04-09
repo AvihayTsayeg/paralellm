@@ -9,6 +9,7 @@
   "program": "serving.py",
   "componentClass": "Serving",
   "group": "General",
+  "includeGlobPatterns" : "serving* | printer* | __init__.py",
   "useMLOps": true,
   "inputInfo": [
     {

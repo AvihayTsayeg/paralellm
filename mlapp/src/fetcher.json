@@ -8,6 +8,7 @@
   "program": "fetcher.py",
   "componentClass": "Fetcher",
   "group": "ModelConnectors",
+  "includeGlobPatterns" : "fetcher* | printer* | __init__.py",
   "useMLOps": true,
   "inputInfo": [],
   "outputInfo": [{

@@ -8,6 +8,7 @@
   "program": "linear.py",
   "componentClass": "Linear",
   "group": "Algorithms",
+  "includeGlobPatterns" : "linear* | printer* | __init__.py",
   "useMLOps": true,
   "inputInfo": [{
     "description": "Google report",
