@@ -1,5 +1,5 @@
 {
-  "IncludeGlobPatterns":"fetcher.*|**/__init__.py|",
+  "includeGlobPatterns":"fetcher.* | __init__.py | printer/**",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
@@ -8,7 +8,6 @@
   "program": "fetcher.py",
   "componentClass": "Fetcher",
   "group": "ModelConnectors",
-  "includeGlobPatterns" : "fetcher* | printer* | __init__.py",
   "useMLOps": true,
   "inputInfo": [],
   "outputInfo": [{

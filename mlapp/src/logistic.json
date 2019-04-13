@@ -1,5 +1,5 @@
 {
-  "IncludeGlobPatterns":"logistic.*|**/__init__.py|printer/**|",
+  "includeGlobPatterns":"logistic.*| __init__.py |printer/**|",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
@@ -8,7 +8,6 @@
   "program": "logistic.py",
   "componentClass": "Logistic",
   "group": "Algorithms",
-  "includeGlobPatterns" : "logistic* | printer* | __init__.py",
   "useMLOps": true,
   "inputInfo": [{
     "description": "Google report",
