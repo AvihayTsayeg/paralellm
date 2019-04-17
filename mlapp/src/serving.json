@@ -1,5 +1,5 @@
 {
-  "IncludeGlobPatterns":"serving.*|**/__init__.py|printer/**|",
+  "includeGlobPatterns":"serving.*| printer* |__init__.py",
   "engineType": "Generic",
   "deps": ["ansible","requests"],
   "userStandalone": false,

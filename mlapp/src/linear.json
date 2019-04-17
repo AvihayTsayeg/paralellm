@@ -1,5 +1,5 @@
 {
-  "IncludeGlobPatterns":"linear.*|**/__init__.py|printer/**|",
+  "includeGlobPatterns":"linear.*|printer/**|__init__.py",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
