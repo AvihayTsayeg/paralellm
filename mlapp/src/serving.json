@@ -8,6 +8,7 @@
   "label": "model_serving_3_lines_file",
   "program": "serving.py",
   "componentClass": "Serving",
+  "modelBehavior": "ModelConsumer",
   "group": "General",
   "useMLOps": true,
   "inputInfo": [ ],

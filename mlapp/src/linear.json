@@ -8,6 +8,7 @@
   "program": "linear.py",
   "componentClass": "Linear",
   "group": "Algorithms",
+  "modelBehavior": "ModelProducer",
   "useMLOps": true,
   "inputInfo": [],
   "outputInfo": [],
