@@ -7,7 +7,7 @@ class Linear(ConnectableComponent):
 
     def _materialize(self, parent_data_objs, user_data):
         model_path = self._params["output-model"]
-        self._logger("*****************writing model file %s ******************************" % model_path)
+        self._logger.info("*****************writing model file %s ******************************" % model_path)
         with open(model_path, "w") as model_file:
             model_file.writelines(["line1", "line2", "line3"])
-        self._logger("######################Finished writing model file %s ########################" % model_path)
+        self._logger.info("######################Finished writing model file %s ########################" % model_path)
