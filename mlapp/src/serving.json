@@ -1,40 +1,26 @@
 {
-  "includeGlobPatterns":"serving.*| printer* |__init__.py",
+  "includeGlobPatterns":"serving.*|__init__.py",
   "engineType": "Generic",
-  "deps": ["ansible","requests"],
+  "deps": [],
   "userStandalone": false,
   "language": "Python",
-  "name": "serving-k3",
-  "label": "serve model-k3",
+  "name": "model_serving_3_lines_file",
+  "label": "model_serving_3_lines_file",
   "program": "serving.py",
   "componentClass": "Serving",
   "group": "General",
   "useMLOps": true,
-  "inputInfo": [
-    {
-      "description": "Linear Model",
-      "label": "model path",
-      "defaultComponent": "",
-      "type": "str",
-      "group": "data"
-    },
-    {
-      "description": "Logistic Model",
-      "label": "model path",
-      "defaultComponent": "",
-      "type": "str",
-      "group": "data"
-    }
-  ],
+  "inputInfo": [ ],
   "outputInfo": [],
   "arguments": [
-    {
-      "key": "clientId",
-      "label": "Kenshoo client Id",
-      "type": "int",
-      "description": "kenshoo client to optimize",
-      "optional": false
-    }
+   {
+            "key": "input-model",
+            "label": "Model input file",
+            "type": "str",
+            "description": "File to use for reading the pi model",
+            "optional": true,
+            "tag": "input_model_path"
+        }
   ],
   "version": 1
 }

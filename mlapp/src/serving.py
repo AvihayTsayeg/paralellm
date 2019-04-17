@@ -19,20 +19,14 @@ import requests
 class Serving(ConnectableComponent):
     def __init__(self, engine):
         super(self.__class__, self).__init__(engine)
-        self._logger.info(__file__)
-        print_data(self._logger, "***************Serving**********************")
+
 
     def _materialize(self, parent_data_objs, user_data):
-        print_data(self._logger, "***************Serving**********************")
-        for param in parent_data_objs:
-            prent_param = "serving -----------> parent param is: {param}".format(param=param)
-            print_data(self._logger, prent_param)
 
-        for k,v in self._params.items():
-            params_info = "serving -----------> key: {key} ==> value: {value}".format(key=k, value=v)
-            print_data(self._logger, params_info)
+        model_path = self._params["input-model"]
+        self._logger.info("******************** reading model input file %s ***************" % model_path)
+        with open(model_path, "r") as f:
+            self._logger.info(f.readlines())
+        self._logger.info("********************Finish reading model input file %s ***************" % model_path)
 
-        mlt = BarGraph().name("Kenshoo Bar graph example").cols(["bar", "bar2"]).data([1500, 2000])
-        mlops.set_stat(mlt)
 
-        return []
