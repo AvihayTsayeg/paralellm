@@ -1,9 +1,3 @@
-try:
-    from pip import main as pipmain
-except:
-    from pip._internal import main as pipmain
-pipmain(['install', 'ansible'])
-
 from parallelm.components.connectable_component import ConnectableComponent
 
 
