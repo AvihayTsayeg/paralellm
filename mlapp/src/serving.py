@@ -12,6 +12,7 @@ class Serving(ConnectableComponent):
         super(self.__class__, self).__init__(engine)
 
     def _materialize(self, parent_data_objs, user_data):
+
         model_path = self._params["input-model"]
         self._logger.info("******************** reading model input file %s ***************" % model_path)
         with open(model_path, "r") as f:

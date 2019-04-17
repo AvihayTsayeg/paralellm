@@ -1,3 +1,5 @@
+import datetime
+
 from parallelm.components.connectable_component import ConnectableComponent
 
 
@@ -9,5 +11,5 @@ class Linear(ConnectableComponent):
         model_path = self._params["output-model"]
         self._logger.info("*****************writing model file %s ******************************" % model_path)
         with open(model_path, "w") as model_file:
-            model_file.writelines(["line1", "line2", "line3"])
+            model_file.writelines(["line1\n", "line3\n", str(datetime.datetime.now())])
         self._logger.info("######################Finished writing model file %s ########################" % model_path)
