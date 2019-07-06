@@ -1,5 +1,5 @@
 {
-  "IncludeGlobPatterns":"fetcher.*|**/__init__.py|",
+  "includeGlobPatterns":"fetcher.* | __init__.py | printer/**",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",

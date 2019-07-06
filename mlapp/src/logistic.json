@@ -1,5 +1,5 @@
 {
-  "IncludeGlobPatterns":"logistic.*|**/__init__.py|printer/**|",
+  "includeGlobPatterns":"logistic.*| __init__.py |printer/**|",
   "engineType": "Generic",
   "userStandalone": false,
   "language": "Python",
